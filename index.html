@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dijital Ekrem — Ankara Kamera ve Fotoğraf Ekipmanları</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<meta name="description" content="Dijital Ekrem — 2006'dan bu yana Ankara Çankaya'da ikinci el ve sıfır kamera, bilgisayar, tablet ve cep telefonu. Canon, Fujifilm, Sony ve daha fazlası.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo-block">
+    <img src="img/logo-ikon.png" alt="Dijital Ekrem" class="logo-img">
+    <span class="logo-text">DİJİTAL EKREM</span>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+  <nav class="nav" id="navMenu">
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+</header>
+
+<section id="anasayfa" class="slider">
+  <div class="slider-track" id="sliderTrack"></div>
+  <div class="slider-dots" id="sliderDots"></div>
+</section>
+
+<section class="icon-kategoriler">
+  <div class="icon-kat-grid" id="iconKatGrid"></div>
+</section>
+
+<section class="trust-band">
+  <div class="trust-item"><span class="trust-ic">🛡️</span><p>Orijinal ve Garantili Ürün</p></div>
+  <div class="trust-item"><span class="trust-ic">💬</span><p>Uzman Satış Danışmanlığı</p></div>
+  <div class="trust-item"><span class="trust-ic">🏪</span><p>2006'dan Beri Aynı Adreste</p></div>
+  <div class="trust-item"><span class="trust-ic">⚡</span><p>Hızlı WhatsApp Yanıtı</p></div>
+</section>
+
+<section id="urunler" class="section-block tint-urunler">
+  <h2 id="urunBaslik">Ürünlerimiz</h2>
+  <p class="urun-note">Fotoğrafına dokunduğunuzda ürünü daha yakından görebilirsiniz. Satın almak için Sahibinden mağazamıza yönlendirilirsiniz.</p>
+  <div class="urun-grid" id="urunGrid">
+    <p class="galeri-empty">Ürünler yükleniyor...</p>
+  </div>
+</section>
+
+<section id="galeri" class="section-block tint-galeri">
+  <h2>Galeri</h2>
+  <div class="galeri-slider-wrap">
+    <button type="button" class="galeri-ok galeri-ok-sol" id="galeriOkSol">‹</button>
+    <div id="galeriGrid" class="galeri-slider">
+      <p class="galeri-empty">Fotoğraflar yükleniyor...</p>
+    </div>
+    <button type="button" class="galeri-ok galeri-ok-sag" id="galeriOkSag">›</button>
+  </div>
+</section>
+
+<section class="section-block tint-marka">
+  <h2>Markalarımız</h2>
+  <div class="marka-chips">
+    <span>Canon</span><span>Fujifilm</span><span>Sony</span><span>Nikon</span><span>Panasonic</span>
+    <span>Sigma</span><span>Tamron</span><span>Manfrotto</span><span>Godox</span><span>DJI</span>
+    <span>GoPro</span><span>Olympus</span><span>Samyang</span><span>Viltrox</span>
+    <span>Sirui</span><span>Blackmagic</span>
+  </div>
+</section>
+
+<div class="urun-modal" id="urunModal" style="display:none;">
+  <div class="urun-modal-inner">
+    <button class="urun-modal-close" id="urunModalClose">✕</button>
+    <img id="urunModalImg" src="" alt="">
+    <p class="urun-modal-kategori" id="urunModalKategori"></p>
+    <h3 id="urunModalAd"></h3>
+    <p id="urunModalAciklama"></p>
+    <a href="https://digitalekrem.sahibinden.com/" target="_blank" class="btn-primary">Sahibinden Mağazamızda İncele ↗</a>
+  </div>
+</div>
+
+<section id="hakkimizda" class="section-block">
+  <h2>Hakkımızda</h2>
+  <p>Dijital Ekrem, 2006 yılında Ankara Çankaya'da, Güneşli Pasajı içinde kurulmuş, elektronik alanında uzun yıllardır hizmet veren kurumsal bir işletmedir.</p>
+  <p>Fotoğraf makinesi, objektif, tripot gibi tüm fotoğraf ekipmanlarının yanı sıra; bilgisayar, tablet ve cep telefonu kategorilerinde de, hem ikinci el hem sıfır seçenekleriyle hizmet veriyoruz. Canon, Fujifilm, Sony gibi markaların geniş ürün yelpazesiyle, Ankara'nın güvenilir adreslerinden biriyiz.</p>
+</section>
+
+<section id="iletisim" class="section-block">
+  <h2>İletişim</h2>
+  <div class="iletisim-grid">
+    <div class="iletisim-info">
+      <p><b>Adres</b><br>Güneşli Pasajı, Necatibey Cd. No:16 D:12<br>06430 Çankaya/Ankara</p>
+      <p><b>Bize Ulaşın</b><br>📞 <a href="tel:+905377273161">0537 727 31 61</a><br>📞 <a href="tel:+903122325819">0312 232 58 19</a></p>
+      <a href="https://wa.me/905377273161?text=Merhaba%2C%20Dijital%20Ekrem%27den%20bilgi%20almak%20istiyorum." target="_blank" class="btn-whatsapp">WhatsApp'tan Ulaş</a>
+    </div>
+    <div class="iletisim-map">
+      <iframe
+        src="https://www.google.com/maps?q=Güneşli+Pasajı+Necatibey+Caddesi+No16+Çankaya+Ankara&output=embed"
+        width="100%" height="260" style="border:0;border-radius:10px;" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-rich">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo-block" style="margin-bottom:10px;">
+        <img src="img/logo-ikon.png" alt="Dijital Ekrem" class="logo-img">
+        <span class="logo-text">DİJİTAL EKREM</span>
+      </div>
+      <p class="footer-desc">2006'dan bu yana Ankara Çankaya'da, kamera ve elektronik ekipmanlarında güvenilir adres.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kurumsal</h4>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#urunler">Ürünlerimiz</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+    <div class="footer-col">
+      <h4>Müşteri Hizmetleri</h4>
+      <a href="tel:+905377273161">Telefonla Ara</a>
+      <a href="https://wa.me/905377273161" target="_blank">WhatsApp'tan Ulaş</a>
+      <a href="https://digitalekrem.sahibinden.com/" target="_blank">Sahibinden Mağazamız</a>
+    </div>
+    <div class="footer-col">
+      <h4>Adres</h4>
+      <p class="footer-desc">Güneşli Pasajı, Necatibey Cd. No:16 D:12<br>06430 Çankaya/Ankara</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dijital Ekrem — Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<script>
+const SUPABASE_URL = 'https://efjnszzrybgwompvxkbo.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_twigpUVGJb2LgHHox7QV2g_6Umy_gYH';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
